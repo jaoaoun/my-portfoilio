@@ -20,12 +20,19 @@
 
 // export default App
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Index from './components/pages/index'
 
 const App = () => {
   return (
-    <div>
-      
+    <Router>
+      <div>
+      <Route path="/">
+        <Index/>
+      </Route>
     </div>
+    </Router>
+    
   )
 }
 
