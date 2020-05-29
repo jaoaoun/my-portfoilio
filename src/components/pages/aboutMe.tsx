@@ -1,5 +1,4 @@
 import React from 'react'
-import 'antd/dist/antd.css'
 import { Layout, Card, Row, Col } from 'antd'
 import styled, { keyframes } from 'styled-components'
 import img from '../../assets/profile.jpg'
