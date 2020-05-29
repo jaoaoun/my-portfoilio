@@ -17,16 +17,18 @@ const aboutMe = () => {
           </Col>
           <Col span={12}>
             <CardContent>
-              <Titles>Name: Sorayuth Charoensrisan</Titles>
-              <Titles>Age: 22 years old</Titles>
-              <Titles>Location: Bangkok, Thailand</Titles>
+              <Titles>
+                Name: Sorayuth Charoensrisan <br />
+                Age: 22 years old <br />
+                Location: Bangkok, Thailand
+              </Titles>
               <Subtitles>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello! I'm a university student
-                who love coding. Recently, web apps or programs to be smart. I want to learn more about technical
-                programming and find many bug or problem. I hope that I'm made to improve and wise up by your company.
-                Apart from coding I also love to listen music and play futsal. Cool, isn't it?
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello! I'm a university student who love coding.
+                Recently, web apps or programs to be smart. I want to learn more about technical programming and find
+                many bug or problem. I hope that I'm made to improve and wise up by your company. Apart from coding I
+                also love to listen music and play futsal. Cool, isn't it?
               </Subtitles>
-              <MouseScrollAnimate/>
+              <MouseScrollAnimate />
             </CardContent>
           </Col>
         </Row>
@@ -49,7 +51,7 @@ const Contents = styled(Content)`
 /* Content */
 const CardContent = styled(Card)`
   background: rgba(255, 255, 255, 0.5);
-  padding: 20px;
+  padding: 5% 10% 0 10%;
   height: 100%;
 `
 const CardImg = styled(Card)`
@@ -95,27 +97,27 @@ const scroll = keyframes`
 `
 const MouseScrollAnimate = styled.div`
   & {
-      margin: auto;
-      width: 25px;
-      height: 52px;
-      margin-top: 25px;
-      margin-bottom: 25px;
-      box-shadow: inset 0 0 0 1px #292929;
-      -webkit-box-shadow: inset 0 0 0 1px #292929;
-      -moz-box-shadow: inset 0 0 0 1px #292929;
-      -ms-box-shadow: inset 0 0 0 1px #292929;
-      border-radius: 25px;
+    margin: auto;
+    width: 25px;
+    height: 52px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 0 1px #292929;
+    -webkit-box-shadow: inset 0 0 0 1px #292929;
+    -moz-box-shadow: inset 0 0 0 1px #292929;
+    -ms-box-shadow: inset 0 0 0 1px #292929;
+    border-radius: 25px;
   }
   &:before {
-      position: inherit;
-      display: block;
-      content: "";
-      width: 8px;
-      height: 8px;
-      background: #292929;
-      border-radius: 4px;
-      animation-duration: 1.5s;
-      animation-iteration-count: infinite;
-      animation-name: ${scroll};
+    position: inherit;
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #292929;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: ${scroll};
   }
 `
