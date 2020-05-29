@@ -1,7 +1,6 @@
 import React from 'react'
-import 'antd/dist/antd.css'
 import { Layout, Button } from 'antd'
-import bgimg from '../../assets/indeximg.jpg'
+import bgimg from '../../assets/indexBG.jpg'
 import styled from 'styled-components'
 
 const { Content } = Layout
