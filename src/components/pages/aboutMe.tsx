@@ -67,7 +67,7 @@ const Img = styled.img`
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const Titles = styled.div`
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -75,7 +75,7 @@ const Titles = styled.div`
 `
 const Subtitles = styled.div`
   margin-top: 10%;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
