@@ -38,7 +38,7 @@ const education = () => {
         <TextEdu3>
           Sarasas Thonburi School <br />
           Elementary schooler <br />
-          2014 - 2012
+          2012 - 2014
         </TextEdu3>
       </Content>
     </BackgroundImg>
@@ -54,6 +54,7 @@ const BackgroundImg = styled(Layout)`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment:fixed;
 `
 const DivImg1 = styled.div`
   margin-top: 60px;
@@ -75,8 +76,7 @@ const TextEdu1 = styled.p`
   line-height: 140.62%;
   /* or 34px */
   text-align: center;
-  -webkit-text-stroke: 0.05px #000000;
-  color: rgb(255, 255, 255);
+  color: #000000;
 `
 const Img1 = styled.img`
   /* ungrad 1 */
@@ -126,8 +126,7 @@ const TextEdu2 = styled.p`
   line-height: 140.62%;
   /* or 34px */
   text-align: center;
-  -webkit-text-stroke: 0.05px #000000;
-  color: rgb(255, 255, 255);
+  color: #000000;
 `
 const TextEdu3 = styled.p`
   /* Sarasas Thonburi School Elementary schooler 2014 - 2012 */
@@ -139,6 +138,5 @@ const TextEdu3 = styled.p`
   line-height: 140.62%;
   /* or 34px */
   text-align: center;
-  -webkit-text-stroke: 0.05px #000000;
-  color: rgb(255, 255, 255);
+  color: #000000;
 `
