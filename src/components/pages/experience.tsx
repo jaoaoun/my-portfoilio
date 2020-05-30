@@ -46,7 +46,6 @@ export default experience
 
 const LayoutEx = styled(Layout)`
   width: 100%;
-
   background-color: #d8e4f2;
 `
 
