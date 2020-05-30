@@ -1,7 +1,7 @@
 import React from 'react'
 import 'antd/dist/antd.css'
 import { Layout } from 'antd'
-import bgedu from '../../assets/bgedu.jpg'
+import bgedu from '../../assets/EducationBG.jpg'
 import styled from 'styled-components'
 
 const { Content } = Layout
