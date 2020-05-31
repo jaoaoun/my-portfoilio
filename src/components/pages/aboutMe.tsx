@@ -5,40 +5,6 @@ import img from '../../assets/profile.jpg'
 
 const { Content } = Layout
 
-const aboutMe = () => {
-  return (
-    <Container>
-      <Contents>
-        <Row>
-          <Col span={12}>
-            <CardImg>
-              <Img src={`${img}`} alt="img" className="Profile-img" />
-            </CardImg>
-          </Col>
-          <Col span={12}>
-            <CardContent>
-              <Titles>
-                Name: Sorayuth Charoensrisan <br />
-                Age: 22 years old <br />
-                Location: Bangkok, Thailand
-              </Titles>
-              <Subtitles>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello! I'm a university student who love coding.
-                Recently, web apps or programs to be smart. I want to learn more about technical programming and find
-                many bug or problem. I hope that I'm made to improve and wise up by your company. Apart from coding I
-                also love to listen music and play futsal. Cool, isn't it?
-              </Subtitles>
-              <MouseScrollAnimate />
-            </CardContent>
-          </Col>
-        </Row>
-      </Contents>
-    </Container>
-  )
-}
-
-export default aboutMe
-
 /* Background */
 const Container = styled(Layout)`
   background-size: cover;
@@ -121,3 +87,37 @@ const MouseScrollAnimate = styled.div`
     animation-name: ${scroll};
   }
 `
+
+const aboutMe = () => {
+  return (
+    <Container>
+      <Contents>
+        <Row>
+          <Col span={12}>
+            <CardImg>
+              <Img src={`${img}`} alt="img" className="Profile-img" />
+            </CardImg>
+          </Col>
+          <Col span={12}>
+            <CardContent>
+              <Titles>
+                Name: Sorayuth Charoensrisan <br />
+                Age: 22 years old <br />
+                Location: Bangkok, Thailand
+              </Titles>
+              <Subtitles>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello! I'm a university student who love coding.
+                Recently, web apps or programs to be smart. I want to learn more about technical programming and find
+                many bug or problem. I hope that I'm made to improve and wise up by your company. Apart from coding I
+                also love to listen music and play futsal. Cool, isn't it?
+              </Subtitles>
+              <MouseScrollAnimate />
+            </CardContent>
+          </Col>
+        </Row>
+      </Contents>
+    </Container>
+  )
+}
+
+export default aboutMe
