@@ -1,10 +1,17 @@
 import React from 'react'
 import { Layout, Card, Col, Row } from 'antd'
 import styled from 'styled-components'
-import img from '../../assets/skills/webdev.png'
+import imgweb from '../../assets/skills/webdev.png'
+import imgreact from '../../assets/skills/react.png'
+import imgvue from '../../assets/skills/vue.png'
+import imgpython from '../../assets/skills/python.png'
+import imgccvb from '../../assets/skills/ccvb.png'
+import imgfigma from '../../assets/skills/figma.png'
+import imgsql from '../../assets/skills/sql1.png'
+import imggit from '../../assets/skills/git.png'
 
 const { Content } = Layout
-const { Meta } = Card;
+const { Meta } = Card
 
 const skills = () => {
   return (
@@ -14,32 +21,102 @@ const skills = () => {
           “If you don’t try this, you won’t become the superhero you were meant to be”
           <Row>
             <Cols span={6}>
-              <ItemContents hoverable cover={<div><Img alt="logo" src={`${img}`} /></div>}>
-              <MetaStyled title="HTML, CSS, JS" />
+              <ItemContents
+                hoverable
+                cover={
+                  <div>
+                    <Img alt="logo" src={`${imgweb}`} />
+                  </div>
+                }
+              >
+                <MetaStyled title="HTML, CSS, JS" />
               </ItemContents>
             </Cols>
             <Cols span={6}>
-              <ItemContents>Content2</ItemContents>
+              <ItemContents
+                hoverable
+                cover={
+                  <div>
+                    <Img alt="logo" src={`${imgreact}`} />
+                  </div>
+                }
+              >
+                <MetaStyled title="React.js & React Native" />
+              </ItemContents>
             </Cols>
             <Cols span={6}>
-              <ItemContents>Content3</ItemContents>
+              <ItemContents
+                hoverable
+                cover={
+                  <div>
+                    <Img alt="logo" src={`${imgvue}`} />
+                  </div>
+                }
+              >
+                <MetaStyled title="Vue.js" />
+              </ItemContents>
             </Cols>
             <Cols span={6}>
-              <ItemContents>Content4</ItemContents>
+              <ItemContents
+                hoverable
+                cover={
+                  <div>
+                    <Img alt="logo" src={`${imgpython}`} />
+                  </div>
+                }
+              >
+                <MetaStyled title="Python" />
+              </ItemContents>
             </Cols>
           </Row>
           <Row>
             <Cols span={6}>
-              <ItemContents>Content5</ItemContents>
+              <ItemContents
+                hoverable
+                cover={
+                  <div>
+                    <Img alt="logo" src={`${imgccvb}`} />
+                  </div>
+                }
+              >
+                <MetaStyled title="C#, C++, VB" />
+              </ItemContents>
             </Cols>
             <Cols span={6}>
-              <ItemContents>Content6</ItemContents>
+              <ItemContents
+                hoverable
+                cover={
+                  <div>
+                    <Img alt="logo" src={`${imgfigma}`} />
+                  </div>
+                }
+              >
+                <MetaStyled title="Figma" />
+              </ItemContents>
             </Cols>
             <Cols span={6}>
-              <ItemContents>Content7</ItemContents>
+              <ItemContents
+                hoverable
+                cover={
+                  <div>
+                    <Img alt="logo" src={`${imgsql}`} />
+                  </div>
+                }
+              >
+                <MetaStyled title="SQL" />
+              </ItemContents>
             </Cols>
             <Cols span={6}>
-              <ItemContents>Content8</ItemContents>
+              <ItemContents
+                hoverable
+                cover={
+                  <div>
+                    <Img alt="logo" src={`${imggit}`} />
+                  </div>
+                }
+              >
+                <MetaStyled title="Git" />
+              </ItemContents>
             </Cols>
           </Row>
         </CardContents>
@@ -85,7 +162,7 @@ const CardContents = styled(Card)`
 `
 const ItemContents = styled(Card)`
   width: 100%;
-  
+
   text-align: 'center';
   padding: 0.25%;
 `
@@ -99,7 +176,7 @@ const Img = styled.img`
   background: #e6e6e6;
 `
 const MetaStyled = styled(Meta)`
-  background: #FFFFFF;
+  background: #ffffff;
 `
 
 /* “If you don’t try this, you won’t become the superhero you were meant to be” */
