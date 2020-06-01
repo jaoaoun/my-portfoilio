@@ -81,11 +81,23 @@ const FullName = styled.span`
   color: #000000;
 `
 const ContactIcon = styled.img`
-  width: 40px;
-  margin: 10px;
-  border-radius: 50%;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  & {
+    width: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+  }
+  &:hover {
+    transform: scale(1.125, 1.125);
+    -webkit-transform: scale(1.125, 1.125);
+    -moz-transform: scale(1.125, 1.125);
+    -ms-transform: scale(1.125, 1.125);
+  }
 `
 const Credit = styled.div`
   font-family: 'Roboto';
